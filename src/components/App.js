@@ -12,13 +12,13 @@ export const App = () => {
     const targetValue = evt.target.textContent.toLowerCase();
 
     if (targetValue === 'good') {
-      setGood(good => good + 1);
+      setGood(prevGood => prevGood + 1);
     }
     if (targetValue === 'neutral') {
-      setNeutral(neutral => neutral + 1);
+      setNeutral(prevNeutral => prevNeutral + 1);
     }
     if (targetValue === 'bad') {
-      setBad(bad => bad + 1);
+      setBad(prevBad => prevBad + 1);
     }
   };
 
